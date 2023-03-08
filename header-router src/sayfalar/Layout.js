@@ -44,20 +44,22 @@ const Layout = () => {
                     onMouseOut={(e) => Object.assign(e.target, normal_btn)}
                     >Contact</Link>
                 </li>
-                <li style={stil}>
-                    <Link to="/Login"
-                    className="btn btn-lg btn-warning"
-                    onMouseOver={(e) => Object.assign(e.target, hover_btn)}
-                    onMouseOut={(e) => Object.assign(e.target, normal_btn)}
-                    >Giriş</Link>
-                </li>
-                <li style={stil}>
-                    <Link to="/SignUp"
-                    className="btn btn-lg btn-warning"
-                    onMouseOver={(e) => Object.assign(e.target, hover_btn)}
-                    onMouseOut={(e) => Object.assign(e.target, normal_btn)}
-                    >Kayıt Ol</Link>
-                </li>
+                <div id="btn_div" style={{display:"inline-block"}}>
+                    <li style={stil}>
+                        <Link to="/Login"
+                        className="btn btn-lg btn-warning"
+                        onMouseOver={(e) => Object.assign(e.target, hover_btn)}
+                        onMouseOut={(e) => Object.assign(e.target, normal_btn)}
+                        >Giriş</Link>
+                    </li>
+                    <li style={stil}>
+                        <Link to="/SignUp"
+                        className="btn btn-lg btn-warning"
+                        onMouseOver={(e) => Object.assign(e.target, hover_btn)}
+                        onMouseOut={(e) => Object.assign(e.target, normal_btn)}
+                        >Kayıt Ol</Link>
+                    </li>
+                </div>
                 
             </ul>
         </nav>
