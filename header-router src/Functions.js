@@ -37,7 +37,7 @@ export const girisKontrol = () => {
         yazi.style.color = "green";
 
         document.getElementById("btn_div").style.display = "none";
-        document.getElementById("header_sag").innerHTML = "Kullanıcı: " + kullanici_ayrik[0];
+        document.getElementById("user_name_div").innerHTML = "Kullanıcı: " + kullanici_ayrik[0];
 
         isLogin = true;
 
@@ -70,8 +70,8 @@ export const logout = () => {
   
     sessionStorage.setItem("isLogin", isLogin);
     document.getElementById("logout_Btn").style.display = "none";
-    document.getElementById("btn_div").style.display = "block";
-    document.getElementById("header_sag").innerHTML = "";
+    document.getElementById("btn_div").style.display = "inline-block";
+    document.getElementById("user_name_div").innerHTML = "";
   
   }
 
